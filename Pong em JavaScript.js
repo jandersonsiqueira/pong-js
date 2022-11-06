@@ -117,13 +117,13 @@ function movimentaRaqueteOponente(){
 }
 
 // Movimento manual
-//
-//if (keyIsDown(87)){
-  //  yRaqueteOponente -= 7;
- // }
-//  if (keyIsDown(83)){
- //   yRaqueteOponente += 7;
- // }
+
+/*if (keyIsDown(87)){
+    yRaqueteOponente -= 7;
+  }
+  if (keyIsDown(83)){
+    yRaqueteOponente += 7;
+  }*/
 
 function incluiPlacar(){
   stroke(255);
@@ -155,12 +155,6 @@ function marcaPonto(){
   }
 }
 
-function encerraJogo(){
-  if (meusPontos == 1){
-    text("vc ganhou aeee",500,200)
-  }
-}
-
 let chanceDeErrar = 0;
 
 function calculaChanceDeErrar() {
@@ -180,6 +174,6 @@ function calculaChanceDeErrar() {
 
 function bolinhaNaoFicaPresa(){
     if (xBolinha - raio < 0){
-    XBolinha = 23
+    xBolinha = 23
     }
 }
